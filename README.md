@@ -85,12 +85,12 @@ All the callback functions will have a set of properties that you can use inside
 | Property            | Description                                                                      |
 | ------------------- |:--------------------------------------------------------------------------------:|
 | elem     			  | The current element	|
-| offset              | The offset vatue	|
-| directioin		  | The direction that is being scrolled, will return 'up' or 'down'	|
-| coords              | The current posiion in pixels of the element from the bottom of the screen. Will be `0` as it enters the the bottom of the window and will increase as it moves to the top of the screen 	|
-| scrollRatio         | The calculated ratio of the element. Will start at `0` as the element eters from the bottom and will increase as the element moves up the window	|
+| offset              | The offset value	|
+| direction		  | The direction that is being scrolled, will return 'up' or 'down'	|
+| coords              | The current position in pixels of the element from the bottom of the screen. Will be `0` as it enters the the bottom of the window and will increase as it moves to the top of the screen 	|
+| scrollRatio         | The calculated ratio of the element. Will start at `0` as the element enters from the bottom and will increase as the element moves up the window	|
 | thisTop             | The distance of the element to the very top of the page (not the browser window).	|
-| winPos              | The position of the element relative to the widow	|
+| winPos              | The position of the element relative to the window	|
 
 
 ## Contributing to Scrollie
