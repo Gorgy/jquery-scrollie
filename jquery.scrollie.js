@@ -13,6 +13,7 @@
     // Create the defaults once
     var scrollie = "scrollie",
         defaults = {
+            parentElement : window, // the scrolling element to watch for scrolling action. default: window (custom example: .my-wrapper)
             direction : "both", // 'up', 'down'
             scrollOffset : 0, //
             scrollRatio  : 2, 
@@ -127,7 +128,7 @@
                 scroll_ok = true;
             }, 66);//33ms is 30fps, you can try changing this to something larger for better performance
 
-            $(window).on('scroll', function(){
+            $(self.settings.parentElement).on('scroll', function(){
 
                 var windowPos = $(this).scrollTop(),
                     winHeight = $(this).height(),
